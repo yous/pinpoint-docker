@@ -1,11 +1,35 @@
 FROM debian
 MAINTAINER ChaYoung You <yousbe@gmail.com>
 
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN echo 'deb http://http.debian.net/debian/ wheezy contrib' >> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y git
-RUN apt-get install -y openjdk-6-jdk openjdk-7-jdk
-ENV JAVA_6_HOME /usr/lib/jvm/java-6-openjdk-amd64
-ENV JAVA_7_HOME /usr/lib/jvm/java-7-openjdk-amd64
+RUN apt-get install -y git wget
+RUN apt-get install -y java-package fakeroot
+
+RUN useradd pinpoint -m
+WORKDIR /home/pinpoint
+
+RUN wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+  http://download.oracle.com/otn-pub/java/jdk/6u45-b06/jdk-6u45-linux-x64.bin
+RUN chown pinpoint jdk-6u45-linux-x64.bin
+RUN su pinpoint -c 'yes | fakeroot make-jpkg jdk-6u45-linux-x64.bin'
+RUN rm jdk-6u45-linux-x64.bin
+RUN dpkg -i oracle-j2sdk1.6_1.6.0+update45_amd64.deb
+RUN rm oracle-j2sdk1.6_1.6.0+update45_amd64.deb
+
+RUN wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+  http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-linux-x64.tar.gz
+RUN chown pinpoint jdk-7u79-linux-x64.tar.gz
+RUN su pinpoint -c 'yes | fakeroot make-jpkg jdk-7u79-linux-x64.tar.gz'
+RUN rm jdk-7u79-linux-x64.tar.gz
+RUN dpkg -i oracle-j2sdk1.7_1.7.0+update79_amd64.deb
+RUN rm oracle-j2sdk1.7_1.7.0+update79_amd64.deb
+
+ENV JAVA_6_HOME /usr/lib/jvm/j2sdk1.6-oracle
+ENV JAVA_7_HOME /usr/lib/jvm/j2sdk1.7-oracle
+ENV JAVA_HOME /usr/lib/jvm/j2sdk1.7-oracle
 
 WORKDIR /usr/local/apache-maven
 
