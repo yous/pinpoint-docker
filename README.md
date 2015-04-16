@@ -1,6 +1,6 @@
 # Pinpoint Docker
 
-Dockerfile for [Pinpoint](https://github.com/naver/pinpoint).
+Dockerfile for [Pinpoint](https://github.com/naver/pinpoint). You can see the Docker repository on [yous/pinpoint](https://registry.hub.docker.com/u/yous/pinpoint/).
 
 ## Installation
 
