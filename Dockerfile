@@ -24,12 +24,12 @@ WORKDIR /pinpoint
 RUN mvn install -Dmaven.test.skip=true
 
 WORKDIR quickstart/hbase
-ADD http://apache.mirror.cdnetworks.com/hbase/hbase-0.94.27/hbase-0.94.27.tar.gz ./
-RUN tar -zxf hbase-0.94.27.tar.gz
-RUN rm hbase-0.94.27.tar.gz
-RUN ln -s hbase-0.94.27 hbase
-RUN cp ../conf/hbase/hbase-site.xml hbase-0.94.27/conf/
-RUN chmod +x hbase-0.94.27/bin/start-hbase.sh
+ADD http://archive.apache.org/dist/hbase/hbase-0.94.25/hbase-0.94.25.tar.gz ./
+RUN tar -zxf hbase-0.94.25.tar.gz
+RUN rm hbase-0.94.25.tar.gz
+RUN ln -s hbase-0.94.25 hbase
+RUN cp ../conf/hbase/hbase-site.xml hbase-0.94.25/conf/
+RUN chmod +x hbase-0.94.25/bin/start-hbase.sh
 
 WORKDIR /pinpoint
 VOLUME [/pinpoint]
