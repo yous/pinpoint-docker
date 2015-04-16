@@ -4,6 +4,8 @@ MAINTAINER ChaYoung You <yousbe@gmail.com>
 RUN apt-get update
 RUN apt-get install -y git
 RUN apt-get install -y openjdk-6-jdk openjdk-7-jdk
+ENV JAVA_6_HOME /usr/lib/jvm/java-6-openjdk-amd64
+ENV JAVA_7_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
 WORKDIR /usr/local/apache-maven
 
