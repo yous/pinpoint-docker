@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN echo 'deb http://http.debian.net/debian/ wheezy contrib' >> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y git wget
+RUN apt-get install -y git wget curl procps
 RUN apt-get install -y java-package fakeroot
 
 RUN useradd pinpoint -m
