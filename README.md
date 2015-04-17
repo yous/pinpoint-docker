@@ -1,6 +1,7 @@
 # Pinpoint Docker
 
-Docker for [Pinpoint](https://github.com/naver/pinpoint). You can see the repository on [yous/pinpoint](https://registry.hub.docker.com/u/yous/pinpoint/).
+Docker for [Pinpoint](https://github.com/naver/pinpoint). You can see the
+repository on [yous/pinpoint](https://registry.hub.docker.com/u/yous/pinpoint/).
 
 ## About
 
@@ -24,14 +25,26 @@ docker pull yous/pinpoint
 docker run -i -t --rm yous/pinpoint bash
 ```
 
-## Starting
+## Quickstart
 
-### Start HBase
+``` sh
+docker run -it --rm -p 28080:28080 -p 28081:28081 -p 28082:28082 \
+--cap-add SYS_PTRACE --security-opt apparmor:unconfined yous/pinpoint bash
+```
+
+We have to expose some ports used by Pinpoint by specifying `-p` options.
+`--cap-add SYS_PTRACE --security-opt apparmor:unconfined` is needed for
+`netstat -anp` for displaying its PID with the program name. See
+[docker/docker#7276](https://github.com/docker/docker/issues/7276) for details.
+
+### Starting
+
+#### Start HBase
 
 - Start: `quickstart/bin/start-hbase.sh`
 - Initialize Tables: `quickstart/bin/init-hbase.sh`
 
-### Start Pinpoint Daemons
+#### Start Pinpoint Daemons
 
 - Collector: `quickstart/bin/start-collector.sh`
 - Web UI: `quickstart/bin/start-web.sh`
@@ -42,7 +55,7 @@ Visit the following addresses to test out your Pinpoint instance.
 - Web UI: `http://localhost:28080`
 - TestApp: `http://localhost:28081`
 
-## Stopping
+### Stopping
 
 - HBase: `quickstart/bin/stop-hbase.sh`
 - Collector: `quickstart/bin/stop-collector.sh`
@@ -51,4 +64,6 @@ Visit the following addresses to test out your Pinpoint instance.
 
 ## License
 
-Copyright (c) ChaYoung You. See [LICENSE.txt](https://github.com/yous/pinpoint-docker/blob/master/LICENSE.txt) for details.
+Copyright (c) ChaYoung You. See
+[LICENSE.txt](https://github.com/yous/pinpoint-docker/blob/master/LICENSE.txt)
+for details.
