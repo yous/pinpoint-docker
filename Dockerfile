@@ -1,12 +1,10 @@
 FROM debian
 MAINTAINER ChaYoung You <yousbe@gmail.com>
 
-ENV DEBIAN_FRONTEND noninteractive
-
 RUN echo 'deb http://http.debian.net/debian/ wheezy contrib' >> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y git wget curl procps net-tools
-RUN apt-get install -y java-package fakeroot
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y git wget curl procps net-tools
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y java-package fakeroot
 
 RUN useradd pinpoint -m
 WORKDIR /home/pinpoint
