@@ -13,6 +13,9 @@ This Docker runs on Debian (wheezy). Minimal requirements are installed:
 - Pinpoint
 - HBase 0.94.25
 
+For more information about this Dockerfile, see
+["Using Pinpoint with Docker"](http://yous.be/2015/05/05/using-pinpoint-with-docker/).
+
 ## Installation
 
 ``` sh
