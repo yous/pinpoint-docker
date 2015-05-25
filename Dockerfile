@@ -42,17 +42,17 @@ ENV PATH $PATH:/usr/local/apache-maven/apache-maven-3.2.5/bin
 RUN rm apache-maven-3.2.5-bin.tar.gz apache-maven-3.2.5-bin.tar.gz.md5 apache-maven-3.2.5-bin.tar.gz.asc
 
 RUN git clone https://github.com/naver/pinpoint.git /pinpoint
-RUN git checkout tags/1.0.4
+RUN git checkout tags/1.0.5
 WORKDIR /pinpoint
 RUN mvn install -Dmaven.test.skip=true
 
 WORKDIR quickstart/hbase
-ADD http://archive.apache.org/dist/hbase/hbase-0.94.25/hbase-0.94.25.tar.gz ./
-RUN tar -zxf hbase-0.94.25.tar.gz
-RUN rm hbase-0.94.25.tar.gz
-RUN ln -s hbase-0.94.25 hbase
-RUN cp ../conf/hbase/hbase-site.xml hbase-0.94.25/conf/
-RUN chmod +x hbase-0.94.25/bin/start-hbase.sh
+ADD http://archive.apache.org/dist/hbase/hbase-1.0.1/hbase-1.0.1-bin.tar.gz ./
+RUN tar -zxf hbase-1.0.1-bin.tar.gz
+RUN rm hbase-1.0.1-bin.tar.gz
+RUN ln -s hbase-1.0.1 hbase
+RUN cp ../conf/hbase/hbase-site.xml hbase-1.0.1/conf/
+RUN chmod +x hbase-1.0.1/bin/start-hbase.sh
 
 WORKDIR /pinpoint
 VOLUME [/pinpoint]
