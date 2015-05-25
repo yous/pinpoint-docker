@@ -10,7 +10,7 @@ This Docker runs on Debian (wheezy). Minimal requirements are installed:
 - `git`, `wget`, `curl`, `ps`, `netstat`
 - Oracle Java SE 6 and 7
 - Maven 3.2.5
-- Pinpoint
+- Pinpoint 1.0.4
 - HBase 0.94.25
 
 For more information about this Dockerfile, see

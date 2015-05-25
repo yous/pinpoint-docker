@@ -42,6 +42,7 @@ ENV PATH $PATH:/usr/local/apache-maven/apache-maven-3.2.5/bin
 RUN rm apache-maven-3.2.5-bin.tar.gz apache-maven-3.2.5-bin.tar.gz.md5 apache-maven-3.2.5-bin.tar.gz.asc
 
 RUN git clone https://github.com/naver/pinpoint.git /pinpoint
+RUN git checkout tags/1.0.4
 WORKDIR /pinpoint
 RUN mvn install -Dmaven.test.skip=true
 
