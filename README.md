@@ -11,7 +11,7 @@ This Docker runs on Debian (wheezy). Minimal requirements are installed:
 - Oracle Java SE 6 and 7
 - Maven 3.2.5
 - Pinpoint 1.0.5
-- HBase 1.0.1
+- HBase 0.94.25
 
 For more information about this Dockerfile, see
 ["Using Pinpoint with Docker"](http://yous.be/2015/05/05/using-pinpoint-with-docker/).
