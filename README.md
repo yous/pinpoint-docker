@@ -75,6 +75,6 @@ Visit the following addresses to test out your Pinpoint instance.
 
 ## License
 
-Copyright (c) ChaYoung You. See
+Copyright (c) Chayoung You. See
 [LICENSE.txt](https://github.com/yous/pinpoint-docker/blob/master/LICENSE.txt)
 for details.

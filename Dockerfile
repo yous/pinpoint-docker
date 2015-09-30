@@ -1,5 +1,5 @@
 FROM debian
-MAINTAINER ChaYoung You <yousbe@gmail.com>
+MAINTAINER Chayoung You <yousbe@gmail.com>
 
 RUN echo 'deb http://http.debian.net/debian/ wheezy contrib' >> /etc/apt/sources.list
 RUN apt-get update
