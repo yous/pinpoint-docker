@@ -2,8 +2,7 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/yous/pinpoint.svg)](https://hub.docker.com/r/yous/pinpoint/)
 
-Docker for [Pinpoint](https://github.com/naver/pinpoint). You can see the
-repository on [yous/pinpoint](https://registry.hub.docker.com/u/yous/pinpoint/).
+Docker for [Pinpoint](https://github.com/naver/pinpoint). You can see the repository on [yous/pinpoint](https://registry.hub.docker.com/u/yous/pinpoint/).
 
 ## About
 
@@ -15,8 +14,7 @@ This Docker runs on Debian (wheezy). Minimal requirements are installed:
 - Pinpoint 1.0.5
 - HBase 0.94.25
 
-For more information about this Dockerfile, see
-["Using Pinpoint with Docker"](http://yous.be/2015/05/05/using-pinpoint-with-docker/).
+For more information about this Dockerfile, see ["Using Pinpoint with Docker"](http://yous.be/2015/05/05/using-pinpoint-with-docker/).
 
 ## Installation
 
@@ -45,10 +43,7 @@ docker run -it -p 28080:28080 -p 28081:28081 -p 28082:28082 \
 --cap-add SYS_PTRACE yous/pinpoint:1.0.5 bash
 ```
 
-We have to expose some ports used by Pinpoint by specifying `-p` options.
-`--cap-add SYS_PTRACE` is needed for `netstat -anp` for displaying its PID with
-the program name. See
-[docker/docker#7276](https://github.com/docker/docker/issues/7276) for details.
+We have to expose some ports used by Pinpoint by specifying `-p` options. `--cap-add SYS_PTRACE` is needed for `netstat -anp` for displaying its PID with the program name. See [docker/docker#7276](https://github.com/docker/docker/issues/7276) for details.
 
 ### Starting
 
@@ -77,6 +72,4 @@ Visit the following addresses to test out your Pinpoint instance.
 
 ## License
 
-Copyright © Chayoung You. See
-[LICENSE.txt](https://github.com/yous/pinpoint-docker/blob/master/LICENSE.txt)
-for details.
+Copyright © Chayoung You. See [LICENSE.txt](https://github.com/yous/pinpoint-docker/blob/master/LICENSE.txt) for details.
