@@ -39,13 +39,13 @@ docker run -i -t --rm yous/pinpoint:1.0.5 bash
 ## Quickstart
 
 ``` sh
-docker run -it --rm -p 28080:28080 -p 28081:28081 -p 28082:28082 \
---cap-add SYS_PTRACE --security-opt apparmor:unconfined yous/pinpoint:1.0.5 bash
+docker run -it -p 28080:28080 -p 28081:28081 -p 28082:28082 \
+--cap-add SYS_PTRACE yous/pinpoint:1.0.5 bash
 ```
 
 We have to expose some ports used by Pinpoint by specifying `-p` options.
-`--cap-add SYS_PTRACE --security-opt apparmor:unconfined` is needed for
-`netstat -anp` for displaying its PID with the program name. See
+`--cap-add SYS_PTRACE` is needed for `netstat -anp` for displaying its PID with
+the program name. See
 [docker/docker#7276](https://github.com/docker/docker/issues/7276) for details.
 
 ### Starting
