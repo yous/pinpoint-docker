@@ -26,7 +26,7 @@ If you want to use latest Pinpoint,
 docker pull yous/pinpoint
 ```
 
-Also you can specify the version `1.0.4`:
+Also you can specify the version:
 
 ``` sh
 docker pull yous/pinpoint:1.0.4
@@ -35,7 +35,7 @@ docker pull yous/pinpoint:1.0.4
 ## Usage
 
 ``` sh
-docker run -i -t --rm yous/pinpoint:1.0.5 bash
+docker run -it yous/pinpoint:1.0.5 bash
 ```
 
 ## Quickstart
@@ -77,6 +77,6 @@ Visit the following addresses to test out your Pinpoint instance.
 
 ## License
 
-Copyright (c) Chayoung You. See
+Copyright © Chayoung You. See
 [LICENSE.txt](https://github.com/yous/pinpoint-docker/blob/master/LICENSE.txt)
 for details.
