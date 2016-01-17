@@ -18,7 +18,7 @@ For more information about this Dockerfile, see ["Using Pinpoint with Docker"](h
 
 ## Installation
 
-If you want to use latest Pinpoint,
+If you want to use latest version of Pinpoint supported by the Dockerfile,
 
 ``` sh
 docker pull yous/pinpoint
@@ -29,6 +29,8 @@ Also you can specify the version:
 ``` sh
 docker pull yous/pinpoint:1.0.4
 ```
+
+See [tags](https://hub.docker.com/r/yous/pinpoint/tags/) for the list of all available versions.
 
 ## Usage
 
