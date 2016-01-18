@@ -9,9 +9,9 @@ Docker for [Pinpoint](https://github.com/naver/pinpoint). You can see the reposi
 This Docker runs on Debian (wheezy). Minimal requirements are installed:
 
 - `git`, `wget`, `curl`, `ps`, `netstat`
-- Oracle Java SE 6 and 7
+- Oracle Java SE 6 and 8
 - Maven 3.2.5
-- Pinpoint 1.1.2
+- Pinpoint 1.5.0
 - HBase 1.0.1
 
 For more information about this Dockerfile, see ["Using Pinpoint with Docker"](http://yous.be/2015/05/05/using-pinpoint-with-docker/).
@@ -35,14 +35,14 @@ See [tags](https://hub.docker.com/r/yous/pinpoint/tags/) for the list of all ava
 ## Usage
 
 ``` sh
-docker run -i -t yous/pinpoint:1.1.2 bash
+docker run -i -t yous/pinpoint:1.5.0 bash
 ```
 
 ## Quickstart
 
 ``` sh
 docker run -i -t -p 28080:28080 -p 28081:28081 -p 28082:28082 \
---cap-add SYS_PTRACE yous/pinpoint:1.1.2 bash
+--cap-add SYS_PTRACE yous/pinpoint:1.5.0 bash
 ```
 
 We have to expose some ports used by Pinpoint by specifying `-p` options. `--cap-add SYS_PTRACE` is needed for `netstat -anp` for displaying its PID with the program name. See [docker/docker#7276](https://github.com/docker/docker/issues/7276) for details.
