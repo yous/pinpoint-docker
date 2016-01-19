@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER Chayoung You <yousbe@gmail.com>
 
-RUN echo 'deb http://http.debian.net/debian/ jessie contrib' >> /etc/apt/sources.list
+RUN echo 'deb http://httpredir.debian.org/debian/ jessie contrib' >> /etc/apt/sources.list
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y git wget curl procps net-tools apt-utils
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y java-package fakeroot

@@ -6,13 +6,43 @@ Docker for [Pinpoint](https://github.com/naver/pinpoint). You can see the reposi
 
 ## About
 
-This Docker runs on Debian (wheezy). Minimal requirements are installed:
+All versions of Docker run on Debian (jessie). Minimal requirements are installed, `git`, `wget`, `curl`, `ps`, `netstat`.
 
-- `git`, `wget`, `curl`, `ps`, `netstat`
-- Oracle Java SE 6 and 8
+### 1.5.0
+
+- Oracle Java SE 6 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
 - Maven 3.2.5
-- Pinpoint 1.5.0
 - HBase 1.0.1
+
+### 1.1.2
+
+- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Maven 3.2.5
+- HBase 1.0.1
+
+### 1.1.1
+
+- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Maven 3.2.5
+- HBase 1.0.1
+
+### 1.1.0
+
+- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Maven 3.2.5
+- HBase 1.0.1
+
+### 1.0.5
+
+- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Maven 3.2.5
+- HBase 0.94.25
+
+### 1.0.4
+
+- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Maven 3.2.5
+- HBase 0.94.25
 
 For more information about this Dockerfile, see ["Using Pinpoint with Docker"](http://yous.be/2015/05/05/using-pinpoint-with-docker/).
 
