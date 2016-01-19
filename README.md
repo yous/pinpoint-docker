@@ -71,8 +71,8 @@ docker run -i -t yous/pinpoint:1.5.0 bash
 ## Quickstart
 
 ``` sh
-docker run -i -t -p 28080:28080 -p 28081:28081 -p 28082:28082 \
---cap-add SYS_PTRACE yous/pinpoint:1.5.0 bash
+docker run -i -t -p 28080-28082:28080-28082 --cap-add SYS_PTRACE \
+yous/pinpoint:1.5.0 bash
 ```
 
 We have to expose some ports used by Pinpoint by specifying `-p` options. `--cap-add SYS_PTRACE` is needed for `netstat -anp` for displaying its PID with the program name. See [docker/docker#7276](https://github.com/docker/docker/issues/7276) for details.
