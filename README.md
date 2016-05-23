@@ -2,7 +2,7 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/yous/pinpoint.svg)](https://hub.docker.com/r/yous/pinpoint/)
 
-Docker for [Pinpoint](https://github.com/naver/pinpoint). You can see the repository on [yous/pinpoint](https://registry.hub.docker.com/u/yous/pinpoint/).
+Docker for [Pinpoint](https://github.com/naver/pinpoint). You can see the repository on [yous/pinpoint](https://hub.docker.com/r/yous/pinpoint/).
 
 ## About
 
