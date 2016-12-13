@@ -2,10 +2,22 @@ FROM debian:jessie
 MAINTAINER Chayoung You <yousbe@gmail.com>
 
 RUN echo 'deb http://httpredir.debian.org/debian/ jessie contrib' >> /etc/apt/sources.list
-RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y git wget curl procps net-tools apt-utils
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y java-package fakeroot
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y libgl1-mesa-glx libfontconfig1 libxslt1.1 libxtst6 libxxf86vm1 libgtk2.0-0 libxt6
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
+  apt-utils \
+  curl \
+  fakeroot \
+  git \
+  java-package \
+  libfontconfig1 \
+  libgl1-mesa-glx \
+  libgtk2.0-0 \
+  libxslt1.1 \
+  libxt6 \
+  libxtst6 \
+  libxxf86vm1 \
+  net-tools \
+  procps \
+  wget
 
 RUN useradd pinpoint -m
 WORKDIR /home/pinpoint
