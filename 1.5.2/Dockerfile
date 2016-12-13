@@ -46,7 +46,7 @@ RUN rm apache-maven-3.2.5-bin.tar.gz apache-maven-3.2.5-bin.tar.gz.md5 apache-ma
 RUN git clone https://github.com/naver/pinpoint.git /pinpoint
 WORKDIR /pinpoint
 RUN git checkout tags/1.5.2
-RUN mvn install -Dmaven.test.skip=true
+RUN mvn install -Dmaven.test.skip=true -B
 
 WORKDIR quickstart/hbase
 ADD http://archive.apache.org/dist/hbase/hbase-1.0.3/hbase-1.0.3-bin.tar.gz ./
