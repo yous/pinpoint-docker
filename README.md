@@ -10,19 +10,19 @@ All versions of Docker run on Debian (jessie). Minimal requirements are installe
 
 ### 1.5.2
 
-- Oracle Java SE 6 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
+- Oracle Java SE 6, 7 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.3
 
 ### 1.5.1
 
-- Oracle Java SE 6 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
+- Oracle Java SE 6, 7 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.1
 
 ### 1.5.0
 
-- Oracle Java SE 6 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
+- Oracle Java SE 6, 7 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.1
 

@@ -19,6 +19,14 @@ RUN dpkg -i oracle-java6-jdk_6u45_amd64.deb
 RUN rm oracle-java6-jdk_6u45_amd64.deb
 
 RUN wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+  http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-linux-x64.tar.gz
+RUN chown pinpoint jdk-7u79-linux-x64.tar.gz
+RUN su pinpoint -c 'yes | fakeroot make-jpkg jdk-7u79-linux-x64.tar.gz'
+RUN rm jdk-7u79-linux-x64.tar.gz
+RUN dpkg -i oracle-java7-jdk_7u79_amd64.deb
+RUN rm oracle-java7-jdk_7u79_amd64.deb
+
+RUN wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" \
   http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jdk-8u112-linux-x64.tar.gz
 RUN chown pinpoint jdk-8u112-linux-x64.tar.gz
 RUN su pinpoint -c 'yes | fakeroot make-jpkg jdk-8u112-linux-x64.tar.gz'
@@ -27,7 +35,7 @@ RUN dpkg -i oracle-java8-jdk_8u112_amd64.deb
 RUN rm oracle-java8-jdk_8u112_amd64.deb
 
 ENV JAVA_6_HOME /usr/lib/jvm/jdk-6-oracle-x64
-ENV JAVA_7_HOME /usr/lib/jvm/jdk-8-oracle-x64
+ENV JAVA_7_HOME /usr/lib/jvm/jdk-7-oracle-x64
 ENV JAVA_8_HOME /usr/lib/jvm/jdk-8-oracle-x64
 ENV JAVA_HOME /usr/lib/jvm/jdk-8-oracle-x64
 
