@@ -10,55 +10,55 @@ All versions of Docker run on Debian (jessie). Minimal requirements are installe
 
 ### 1.6.0
 
-- Oracle Java SE 6, 7 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
+- Oracle Java SE 6u45, 7u80 and 8u121 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.3
 
 ### 1.5.2
 
-- Oracle Java SE 6, 7 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
+- Oracle Java SE 6u45, 7u80 and 8u121 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.3
 
 ### 1.5.1
 
-- Oracle Java SE 6, 7 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
+- Oracle Java SE 6u45, 7u80 and 8u121 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.1
 
 ### 1.5.0
 
-- Oracle Java SE 6, 7 and 8 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
+- Oracle Java SE 6u45, 7u80 and 8u121 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.1
 
 ### 1.1.2
 
-- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Oracle Java SE 6u45 and 7u80 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.1
 
 ### 1.1.1
 
-- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Oracle Java SE 6u45 and 7u80 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.1
 
 ### 1.1.0
 
-- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Oracle Java SE 6u45 and 7u80 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 1.0.1
 
 ### 1.0.5
 
-- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Oracle Java SE 6u45 and 7u80 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 0.94.25
 
 ### 1.0.4
 
-- Oracle Java SE 6 and 7 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
+- Oracle Java SE 6u45 and 7u80 with `JAVA_6_HOME`, `JAVA_7_HOME` and `JAVA_HOME`
 - Maven 3.2.5
 - HBase 0.94.25
 
