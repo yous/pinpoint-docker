@@ -8,6 +8,12 @@ Docker for [Pinpoint](https://github.com/naver/pinpoint). You can see the reposi
 
 All versions of Docker run on Debian (jessie). Minimal requirements are installed, `git`, `wget`, `curl`, `ps`, `netstat`.
 
+### 1.6.1
+
+- Oracle Java SE 6u45, 7u80 and 8u121 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
+- Maven 3.2.5
+- HBase 1.0.3
+
 ### 1.6.0
 
 - Oracle Java SE 6u45, 7u80 and 8u121 with `JAVA_6_HOME`, `JAVA_7_HOME`, `JAVA_8_HOME` and `JAVA_HOME`
